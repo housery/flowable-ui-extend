@@ -12,7 +12,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-<!--        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>-->
+        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
         <flowable.version>6.7.2</flowable.version>
         <mysql.version>8.0.22</mysql.version>
         <liquibase.version>4.5.0</liquibase.version>
@@ -64,6 +64,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
         </dependency>
+        <!--oracle-->
+        <dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>dms</artifactId>
+        </dependency>
 
         <!-- DATABASE -->
         <dependency>
@@ -80,7 +85,7 @@
     </dependencies>
 
     <dependencyManagement>
-<!--        <dependencies>
+        <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -88,7 +93,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-        </dependencies>-->
+        </dependencies>
     </dependencyManagement>
 
     <build>

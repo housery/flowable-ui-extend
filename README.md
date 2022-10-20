@@ -7,11 +7,11 @@
 1. 克隆或下载项目
 2. 修改 resource下的application.properties文件，将数据源切换为自己的
 
-![image-20221019180648185](README.assets\image-20221019180648185.png)
+![image-20221020095641059](https://raw.githubusercontent.com/housery/img/master/src/image-20221020095641059.png)
 
 3. 修改账号密码
 
-![image-20221019180716604](README.assets\image-20221019180716604.png)
+![image-20221020095745532](https://raw.githubusercontent.com/housery/img/master/src/image-20221020095745532.png)
 
 4. 启动后访问
 
@@ -19,19 +19,19 @@
 
 默认账户密码：admin/test
 
-![image-20221019180734383](README.assets\image-20221019180734383.png)
+![image-20221020095805117](https://raw.githubusercontent.com/housery/img/master/src/image-20221020095805117.png)
 
 默认集成了
 
 admin（管理）、idm（身份认证）、modeler（建模）、task(任务)模块，如不需要相关模块请删除pom文件中的相关starter，请尽量保证基本的idm和modeler模块
 
-![image-20221019180748651](README.assets\image-20221019180748651.png)
+![image-20221020095821629](https://raw.githubusercontent.com/housery/img/master/src/image-20221020095821629.png)
 
 # 人员、组或角色集成（可选）
 
 系统启动完成后会自动创建数据表，将自己系统中的用户、组或者角色集成到下面表中
 
-![image-20221019180800777](README.assets\image-20221019180800777.png)
+![image-20221020095835877](https://raw.githubusercontent.com/housery/img/master/src/image-20221020095835877.png)
 
 即可在画流程图的时候选择到相关人员、组或者角色
 
@@ -41,5 +41,5 @@ admin（管理）、idm（身份认证）、modeler（建模）、task(任务)�
 | act_id_group      | 组表，不想用组可以把自己系统中的角色同步过来是一样的，组和角色叫法不一样，本质上使用起来差不多 |
 | act_id_membership | 用户和组的关联关系表，组里放的是角色的话可以理解为角色用户关联表 |
 
-![image-20221019180810868](README.assets\image-20221019180810868.png)
+![image-20221020095859256](https://raw.githubusercontent.com/housery/img/master/src/image-20221020095859256.png)
 
